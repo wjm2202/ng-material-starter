@@ -1,0 +1,25 @@
+<mat-toolbar color="primary">
+    <span class="fill-remaining-space">
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu" [overlapTrigger]="false">
+        <button mat-menu-item routerLink="/home">
+            <mat-icon>home</mat-icon><span>Home</span>
+        </button>
+        <button mat-menu-item routerLink="/reading">
+            <mat-icon>nfc</mat-icon><span>Sensor</span>
+        </button>
+        <button mat-menu-item routerLink="/readinghistory">
+            <mat-icon>signal_cellular_alt</mat-icon><span>Sensor History</span>
+        </button>
+        <button mat-menu-item routerLink="/calibrate">
+            <mat-icon>build</mat-icon><span>Calibrate</span>
+        </button>
+        <button mat-menu-item routerLink="/notify">
+            <mat-icon>email</mat-icon><span>Notification</span>
+        </button>
+      </mat-menu>
+    </span>
+    <span class="fill-remaining-space">Strain Guage</span>
+  </mat-toolbar>
